@@ -1,0 +1,36 @@
+.card{
+    width: 30%;
+    background-color: #D5EEBB;
+    margin: 10px;
+    border-radius: 3px;
+}
+.card-img{
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px ;
+}
+.card-title{
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    margin:0;
+}
+.card-location{
+    font-variant: small-caps;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin:0;
+}
+.card-info{
+    min-height: 7.5rem;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 600px){
+    .card{
+        width: 100%;
+        margin-top: 10%;
+    }
+}
