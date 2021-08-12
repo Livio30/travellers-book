@@ -1,7 +1,4 @@
 import NavBar from "./components/NavBar/NavBar";
-
-import data from "./asserts/data.js";
-
 function App() {
   return (
     <div>
