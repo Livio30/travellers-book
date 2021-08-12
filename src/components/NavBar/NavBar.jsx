@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <div>
       <div className="nav-bar">
-        <h3 className="brand-name">Travels &nbsp; Book</h3>
+        <h3 className="brand-name">Traveller's &nbsp;&nbsp; Book</h3>
         <ul className="nav-lists">
           <li onClick={() => setCategory("Beaches")} className="nav-list-item">
             Beaches
