@@ -6,8 +6,6 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="content">
-      </div>
     </div>
   );
 }
