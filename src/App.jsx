@@ -13,7 +13,7 @@ function App() {
         {
           data[category].map((place) => {
             return(
-              <Card name={place.name} imageUrl={place.imageUrl} location={place.location} info={place.info} />
+              <Card key={place.id} name={place.name} imageUrl={place.imageUrl} location={place.location} info={place.info} />
             )
           })
         }
