@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./navBar.css";
-import Card from "../card/Card"
-import data from "../../asserts/data";
+import { CategoryContext } from "../../contexts/CategoryContext";
+
 
 export default function NavBar() {
-  const [category, setCategory] = useState("Beaches");
-
+  const {setCategory} = useContext(CategoryContext)
   return (
     <div>
       <div className="nav-bar">
@@ -57,15 +56,6 @@ export default function NavBar() {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="content">
-        {
-          data[category].map((place) => {
-            return(
-              <Card name={place.name} imageUrl={place.imageUrl} location={place.location} info={place.info} />
-            )
-          })
-        }
       </div>
     </div>
   );
